@@ -1,4 +1,4 @@
-module git.grpz.net/zxp/synocertinstall
+module github.com/zxp/synocertinstall
 
 go 1.13
 
