@@ -2,6 +2,10 @@
 A shell command to update Synology NAS SSL certifications and deploy for Synology AppPortal and ReverseProxy.
 
 ## How to use
+Copy this command into the certifications directory and run it. for Let's Encrypt tools such like ACME.SH, it
+will make 4 certifation files for you, the test.com.cer is the certifacte file, the test.com.key is the private
+key, the ca.cer is the chain certifation file, and the fullchain.cer is everything of such 3 files.
+
 ```SHELL
 Usage:
   -ca string
