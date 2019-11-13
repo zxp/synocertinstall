@@ -44,13 +44,13 @@ You will find the Certifation Key (**nvyfz6**), then you can update the new cert
 
 ### Update the specified certificate
 ```SHELL
-/volume1/docker/acme.sh# ./synocertinstall_lin -update -cert-key nvyfz6 -cert test.com/test.com.cer \
+/volume1/docker/acme.sh# ./synocertinstall -update -cert-key nvyfz6 -cert test.com/test.com.cer \
                          -key test.com/test.com.key -ca test.com/ca.cer -chain test.com/fullchain.cer
 ```
 
 ### Install the new certificate to AppPortal and ReserveProxy
 ```SHELL
-/volume1/docker/acme.sh# ./synocertinstall_lin -install -cert-key nvyfz6
+/volume1/docker/acme.sh# ./synocertinstall -install -cert-key nvyfz6
 ```
 
 ### Other command options
