@@ -68,3 +68,14 @@ You will find the Certifation Key (**nvyfz6**), then you can update the new cert
   -test                   test mode, only display what will be done, and where the files will be 
                           copied to.
 ```
+
+### Compatible model
+Tested with my DS1518 and everything is ok, but there have something need pay attention to.
+
+First there are come AppPortal settings lies at /usr/local/etc/certificate/, but this command will
+only install new certificates into /usr/syno/etc/certificate/, so you must link every directories
+into /usr/syno/etc/certificate/ to ensure every service certificates will be updated. You can use 
+ln -s /usr/local/etc/certificate/\* /usr/syno/etc/certificate/ to do this job.
+
+Second you will need restart the services to make sure it will use the new installed certificate.
+For nginx service you can use /usr/syno/sbin/synoservicectl --reload nginx to do it.
