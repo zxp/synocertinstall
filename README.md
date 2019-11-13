@@ -4,7 +4,7 @@ A shell command to update Synology NAS SSL certifications and deploy for Synolog
 ## How to use
 Copy this command into the certifications directory and run it. for Let's Encrypt tools such like ACME.SH, it
 will make 4 certifation files for you, the test.com.cer is the certifacte file, the test.com.key is the private
-key, the ca.cer is the chain certifation file, and the fullchain.cer is everything of such 3 files.
+key, the ca.cer is the chain certifation file, and the fullchain.cer is everything of such 2 certificate files.
 
 ```SHELL
 Usage:
@@ -74,7 +74,7 @@ You will find the Certifation Key (**nvyfz6**), then you can update the new cert
 ```
 
 ### Compatible model
-Tested with my DS1518 and everything is ok, but there have something need pay attention to.
+Tested with my DS1815+ and everything is ok, but there have something need pay attention to.
 
 First there are come AppPortal settings lies at /usr/local/etc/certificate/, but this command will
 only install new certificates into /usr/syno/etc/certificate/, so you must link every directories
